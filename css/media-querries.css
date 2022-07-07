@@ -1,0 +1,18 @@
+/* Phone 576px */
+@media(max-width:576px){
+    .top-nav{
+        display: none;
+    }
+}
+/* Tablet 768px */
+@media(max-width:768px){
+    .container{
+        margin: 0px 10px;
+    }
+}
+/* Laptop 1200px */
+@media(max-width:1200px){
+    .container{
+        margin: 0px 10px;
+    }
+}

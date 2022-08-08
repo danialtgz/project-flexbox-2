@@ -35,6 +35,26 @@ a{
     width: 90%;
     margin: 0px auto;
 }
+/* incommen TITLE h3 */
+.title{
+    font-size: 35px;
+    margin: 50px 0px;
+    text-align: center;
+    position: relative;
+}
+.title::after{
+    position: absolute;
+    display: block;
+    content: '';
+    top:50px;
+    left: 50%;
+    background-color: #FE4C50;
+    width: 100px;
+    height: 6px;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+}
+/* topnav HEADER */
 .top-nav{
     background-color: #1E1E27;
     width: 100%;
@@ -56,6 +76,7 @@ a{
     color: #B5ACBA;
     font-size: 13px;
 }
+/* main navbar HEADER */
 .navbar{
     background-color: #fff;
     box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.381);
@@ -100,6 +121,7 @@ a{
 .navbar-icon i:hover{
     color: gray;
 }
+/* Slider main */
 .slider{
     background-image: url('../images/xslider_1.jpg.pagespeed.ic.V9ovSIY03c.jpg');
     height: 40vw;
@@ -140,6 +162,7 @@ a{
 .slider-content button:hover{
     background-color: #fe4c4fb7;
 }
+/* Category */
 .category-items{
     justify-content: center;
     flex-wrap: wrap;
@@ -187,26 +210,11 @@ a{
     text-align: center;
     font-family: codl;
 }
-.filter h3{
-    font-size: 35px;
-    margin: 20px 0px;
-    text-align: center;
-    position: relative;
-}
-.filter h3::after{
-    display: block;
-    content: "";
-    position: absolute;
-    width: 100px;
-    background-color: #FE4C50;
-    right:45%;
-    top: calc(100% + 13px);
-    height: 7px;
-}
 .btn-group{
     display: flex;
     justify-content: center;
     margin: 40px 0px;
+    flex-wrap: wrap;
 }
 .btn-group button{
     border: 1px solid #EBEBEB;
@@ -222,22 +230,21 @@ a{
     background-color:#FE4C50 ;
     color: white;
 }
+/* Group card and shopping */
 .group-card{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 90%;
-    margin: 0px auto;
 }
 .shop-card{
     text-align: center;
-    border: 1px solid rgba(128, 128, 128, 0.247);
+    border: 1px solid rgba(128, 128, 128, 0.075);
     cursor: pointer;
     margin: 15px 0px;
     border-radius: 3px;
 }
 .shop-card h4{
-    margin: 10px auto;
+    margin: 10px 0px;
     font-family: cod;
 }
 .shop-card p{
@@ -271,7 +278,100 @@ a{
 .shop-card:hover img{
     transform: scale(1.1);
 }
-.shop-text-area{
-    width: 220px;
-    margin: 0px auto;
+/* Discount section Timer */
+.discount{
+    background-color: #F2F2F2;
+    height: 80vh;
+    margin: 50px 0px;
+    position: relative;
+
+}
+.discount-content{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.timer{
+    margin: 20px auto;
+    z-index: 1000;
+}
+.ultimer{
+    display: flex;
+    justify-content: right;
+    z-index: 1000;
+    flex-wrap: wrap;
+}
+.ultimer li{
+    background-color: white;
+    border-radius: 50%;
+    padding: 30px;
+    list-style-type: none;
+    margin-right: 10px;
+    text-align: center;
+    margin: 2;
+    width: 120px;
+    height: 120px;
+    z-index: 1000;
+}
+.timer h3{
+    font-size: 35px;
+    position: relative;
+    margin-bottom: 50px;
+    text-align: center;
+    z-index: 1000;
+}
+.timer h3::after{
+    position: absolute;
+    display: block;
+    content: '';
+    top:50px;
+    left: 50%;
+    background-color: #FE4C50;
+    width: 100px;
+    height: 6px;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+}
+.timer-num{
+    font-size: 40px;
+    font-family: codb;
+    color: #FE4C50;
+}
+.timer img{
+    position: absolute;
+    top: 50%;
+    left: 200px;
+    transform: translate(-50%, -50%);
+    height:80vh;
+    z-index: 1;
+}
+/* facility section */
+.facility{
+    width: 85%;
+    margin: 50px auto;
+}
+.facility-group{
+    background-color:#F3F3F3 ;
+    display: flex;
+    justify-content: center;
+}
+.facility-items{
+    display: flex;
+    padding: 30px 5px;
+    border: solid 1px white;
+    width: 300px;
+}
+.items-icon{
+    color: #FE4C50;
+    font-size: 30px;
+    margin: 3px 16px 3px 6px;
+}
+.items-content h4{
+    font-size: 15px;
+    margin-bottom: 5px;
+    font-family: codb;
+}
+.items-content p{
+    font-size: 13px;
+    color: #ff4a53;
 }

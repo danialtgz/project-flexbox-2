@@ -27,29 +27,34 @@
                 </div>
             </div>
         </section>
-        <section class="navbar flex">
-            <div class="navbar-item container flex">
+        <nav class="navbar">
+            <div class="navbar-container container">
                 <div class="logo">
                     <a href="#">COLO
                         <span>SHOP</span>
                     </a>
                 </div>
-                <div class="navbar-link">
-                    <a href="#">HOME</a>
-                    <a href="#">SHOP</a>
-                    <a href="#">PROMOTION</a>
-                    <a href="#">PAGES</a>
-                    <a href="#">BLOG</a>
-                    <a href="#">CONTACT</a>
+                <input type="checkbox" name="" id="">
+                <div class="hamburger-lines">
+                    <span class="line line1"></span>
+                    <span class="line line2"></span>
+                    <span class="line line3"></span>
                 </div>
+                <ul class="menu-items">
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#about">SHOP</a></li>
+                    <li><a href="#food">PROMOTION</a></li>
+                    <li><a href="#food-menu"> PAGES</a></li>
+                    <li><a href="#testimonials">BLOG</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
                 <div class="navbar-icon">
                     <i class="fa fa-search"></i>
                     <i class="fa fa-user"></i>
                     <i class="fa fa-shopping-cart"></i>
                 </div>
             </div>
-
-        </section>
+        </nav>
     </header>
     <main>
         <div class="slider ">
@@ -260,10 +265,83 @@
         </div>
         <div class="blog">
             <h3 class="title">Latest Blogs</h3>
+            <div class="container">
+                <div class="blog-group">
+                    <div class="blog-img">
+                        <div class="blog-background"
+                            style="background-image: url('images/xblog_1.jpg.pagespeed.ic.uhsS2HcMth.webp');"></div>
+                        <div class="blog-content">
+                            <h3>Here are the trends I see coming this fall</h3>
+                            <p>BY ADMIN | DEC 01, 2017</p>
+                            <a href="#">Read more</a>
+                        </div>
+                    </div>
+                    <div class="blog-img">
+                        <div class="blog-background"
+                            style="background-image: url('images/xblog_2.jpg.pagespeed.ic.qxmbUraFLI.webp');"></div>
+                        <div class="blog-content">
+                            <h3>Here are the trends I see coming this fall</h3>
+                            <p>BY ADMIN | DEC 01, 2017</p>
+                            <a href="#">Read more</a>
+                        </div>
+                    </div>
+                    <div class="blog-img">
+                        <div class="blog-background"
+                            style="background-image: url('images/xblog_3.jpg.pagespeed.ic.hVgfREpCpV.webp')"></div>
+                        <div class="blog-content">
+                            <h3>Here are the trends I see coming this fall</h3>
+                            <p>BY ADMIN | DEC 01, 2017</p>
+                            <a href="#">Read more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="contact"></div>
+        <div class="contact">
+            <div class="container contact-items">
+                <div class="contact-text">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to our newsletter and get 20% off your first purchase</p>
+                </div>
+                <div class="contect-form">
+                    <form action="#" class="contact-form-items">
+                        <input type="text" placeholder="Your Email">
+                        <input type="button" value="Subscribe">
+                    </form>
+                </div>
+            </div>
+        </div>
     </main>
-    <footer></footer>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-items">
+                <div class="footer-caption">
+                    <div class="footer-logo">
+                        <a href="#">COLO
+                            <span>SHOP</span>
+                        </a>
+                    </div>
+                    <div class="footer-text">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus, soluta ducimus? Amet,
+                            porro perferendis error possimus provident a, perspiciatis impedit dicta assumenda cum eveniet</p>
+                    </div>
+                </div>
+                <div class="footer-icon">
+                    <i class="fa fa-facebook"></i>
+                    <i class="fa fa-instagram"></i>
+                    <i class="fa fa-youtube"></i>
+                    <i class="fa fa-twitter"></i>
+                    <i class="fa fa-skype"></i>
+                    <p>©2018 All Rights Reserverd. This template is made with  by <span>Danialtgz</span></p>
+                    <ul>
+                        <li>Blog</li>
+                        <li>FAQs</li>
+                        <li>Contact us</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
